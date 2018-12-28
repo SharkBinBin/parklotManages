@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bookweb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/parklotinfodb?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123
   redis:
@@ -16,5 +16,3 @@ spring:
 mybatis:
   mapper-locations:
   - classpath:mapper/**.xml
- 
-  

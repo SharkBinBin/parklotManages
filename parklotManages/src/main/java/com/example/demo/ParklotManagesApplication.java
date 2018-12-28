@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 @MapperScan("com.example.demo.mapper")
-@EnableCaching
+/*@EnableCaching*/
 @SpringBootApplication
 public class ParklotManagesApplication {
 
@@ -14,4 +14,5 @@ public class ParklotManagesApplication {
 		SpringApplication.run(ParklotManagesApplication.class, args);
 	}
 
-}
+} 
+		 	
