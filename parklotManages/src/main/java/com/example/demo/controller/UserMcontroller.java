@@ -37,9 +37,6 @@ public class UserMcontroller {
 	
 	@RequestMapping("/reg")
 	public String register(UserM userm) {
-		
-		 
-		  
 		return "success";
 	}
 }

@@ -13,7 +13,7 @@ import com.example.demo.service.LoginService;
 public class LoginController {
 	@Autowired
 	private LoginService loginService;
-	@RequestMapping("/login")
+	@RequestMapping("/loginfsc")
 	public String login(@RequestParam(value=("number"),required=false)String number,
 			@RequestParam(value=("password"),required=false)String password,Model model){
 		number="zhangsan";
