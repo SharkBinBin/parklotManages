@@ -39,7 +39,7 @@ public class UserMcontroller {
 	public String register(UserM userm) {
 		
 		 
-		
+		  
 		return "success";
 	}
 }
