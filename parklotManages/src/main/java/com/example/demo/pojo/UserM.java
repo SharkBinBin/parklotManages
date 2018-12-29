@@ -9,15 +9,15 @@ public class UserM {
 
     private String mnumber;
 
-    private Integer mpassword;
+    private String mpassword;
 
-    private Integer mphone;
+    private String mphone;
 
     private Integer msex;
 
-    private Integer midcard;
+    private String midcard;
 
-    private Integer mbankid;
+    private String mbankid;
 
     private String maddress;
 
@@ -28,8 +28,42 @@ public class UserM {
     private String memail;
 
     private Date registrationdate;
+    
+    
 
-    public Integer getWid() {
+    public String getMpassword() {
+		return mpassword;
+	}
+
+	public void setMpassword(String mpassword) {
+		this.mpassword = mpassword;
+	}
+
+	public String getMphone() {
+		return mphone;
+	}
+
+	public void setMphone(String mphone) {
+		this.mphone = mphone;
+	}
+
+	public String getMidcard() {
+		return midcard;
+	}
+
+	public void setMidcard(String midcard) {
+		this.midcard = midcard;
+	}
+
+	public String getMbankid() {
+		return mbankid;
+	}
+
+	public void setMbankid(String mbankid) {
+		this.mbankid = mbankid;
+	}
+
+	public Integer getWid() {
         return wid;
     }
 
@@ -53,21 +87,7 @@ public class UserM {
         this.mnumber = mnumber == null ? null : mnumber.trim();
     }
 
-    public Integer getMpassword() {
-        return mpassword;
-    }
 
-    public void setMpassword(Integer mpassword) {
-        this.mpassword = mpassword;
-    }
-
-    public Integer getMphone() {
-        return mphone;
-    }
-
-    public void setMphone(Integer mphone) {
-        this.mphone = mphone;
-    }
 
     public Integer getMsex() {
         return msex;
@@ -77,22 +97,7 @@ public class UserM {
         this.msex = msex;
     }
 
-    public Integer getMidcard() {
-        return midcard;
-    }
-
-    public void setMidcard(Integer midcard) {
-        this.midcard = midcard;
-    }
-
-    public Integer getMbankid() {
-        return mbankid;
-    }
-
-    public void setMbankid(Integer mbankid) {
-        this.mbankid = mbankid;
-    }
-
+  
     public String getMaddress() {
         return maddress;
     }

@@ -11,5 +11,6 @@
 <input type="password" name="pwd"/>
 <input type="submit" value="登录">
 </form>
+<a href="jsp/reg.jsp"><input type="button" value="注册"></a>
 </body>
 </html>

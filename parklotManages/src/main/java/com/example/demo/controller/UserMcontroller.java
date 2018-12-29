@@ -37,9 +37,11 @@ public class UserMcontroller {
 	
 	@RequestMapping("/reg")
 	public String register(UserM userm) {
-		
-		 
+		Boolean flag = usermservice.register(userm);
+		 if (flag) {
+			return "success";
+		}
 		  
-		return "success";
+		return "error";
 	}
 }
