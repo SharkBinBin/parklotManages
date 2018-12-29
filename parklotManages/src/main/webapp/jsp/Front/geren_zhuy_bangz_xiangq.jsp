@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="/Front/css/index.css" type="text/css">
 <link rel="stylesheet" href="/Front/css/zy.css" type="text/css">  
 <link rel="stylesheet" href="/Front/css/swiper.min.css" type="text/css">
-<script type="text/javascript" src="/Front/js/swiper.min.js"></script>
-<script type="text/javascript" src="/Front/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/Front//Front/js/swiper.min.js"></script>
+<script type="text/javascript" src="/Front//Front/js/jquery-1.4.4.min.js"></script>
 </head>
 <body style="height: 100%; "> 
 <!-- 头部 -->
