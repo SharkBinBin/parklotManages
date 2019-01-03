@@ -21,7 +21,7 @@ public class UserMcontroller {
 	@RequestMapping("/start")
 	public String go() {
 		
-		return "index";
+		return "Front/index";
 	}
 	
 	@RequestMapping("/login")
@@ -37,6 +37,10 @@ public class UserMcontroller {
 	
 	@RequestMapping("/reg")
 	public String register(UserM userm) {
-		return "success";
+		Boolean flag = usermservice.register(userm);
+		 if (flag) {
+			return "success";
+		}		  
+		return "error";
 	}
 }

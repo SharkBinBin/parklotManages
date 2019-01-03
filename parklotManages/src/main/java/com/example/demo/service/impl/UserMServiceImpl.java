@@ -28,8 +28,11 @@ public class UserMServiceImpl implements UserMService{
 
 	@Override
 	public Boolean register(UserM userM) {
-		// TODO Auto-generated method stub
-		return null;
+		int count = usermmapper.register(userM);
+		if (count>0) {
+			return true;
+		}
+		return false;
 	}
 	
 }

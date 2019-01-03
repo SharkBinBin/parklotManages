@@ -17,5 +17,10 @@ public class OrganizationServiceImpl implements OrganizationService{
 		// TODO Auto-generated method stub
 		return organizationMapper.selectlist(oname);
 	}
+	@Override
+	public int insert(Garage garage) {
+		// TODO Auto-generated method stub
+		return organizationMapper.insert(garage);
+	}
 
 }

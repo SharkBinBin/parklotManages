@@ -13,14 +13,20 @@ import com.example.demo.service.LoginService;
 import com.example.demo.service.OrganizationService;
 
 @Controller
+@RequestMapping("/organization")
 public class OrganizationController {
 	@Autowired
 	private OrganizationService organizationService;
 	
-	@RequestMapping("/organizationselect")
-	public String login(@RequestParam(value=("Oname"),required=false)String Oname,Model model){
+	@RequestMapping("/select")
+	public String select(@RequestParam(value=("Oname"),required=false)String Oname,Model model){
 		Oname="zhangsan";
 			List<Garage> list=organizationService.seleclist(Oname);
+			model.addAttribute("list", list);
 			return "index";
+	}
+	public String insert(Garage garage,Model model) {
+		int count = organizationService.insert(garage);
+		return "/organization/select";
 	}
 }

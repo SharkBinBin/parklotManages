@@ -10,17 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.LoginService;
 
 @Controller
+@RequestMapping("/organization")
 public class LoginController {
 	@Autowired
 	private LoginService loginService;
-	@RequestMapping("/loginfsc")
+	@RequestMapping("/login")
 	public String login(@RequestParam(value=("number"),required=false)String number,
 			@RequestParam(value=("password"),required=false)String password,Model model){
 		number="zhangsan";
 		password="123";
 		int count=loginService.login(number,password);
 		if (count>0) {
-			return "index";
+			return "backstage/index";
 		}else {
 			return "login"; 
 		}

@@ -8,4 +8,6 @@ public interface OrganizationService {
 
 	List<Garage> seleclist(String oname);
 
+	int insert(Garage garage);
+
 }

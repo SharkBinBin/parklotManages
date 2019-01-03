@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta name="format-detection" content="telephone=no" />
+<meta charset="utf-8">
+<meta content="贵州垫付网垫科技有限公司" http-equiv="keywords">
+<meta name="description" content="贵州垫付网垫科技有限公司">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>贵州垫付网垫科技有限公司</title>
+<link rel="stylesheet" href="/Front/css/index.css" type="text/css">
+<link rel="stylesheet" href="/Front/css/zy.css" type="text/css">  
+<link rel="stylesheet" href="/Front/css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="/Front/js/swiper.min.js"></script>
+<script type="text/javascript" src="/Front/js/jquery-1.4.4.min.js"></script>
+</head>
+<body style="height: 100%;background: #eaeaea;"> 
+<!-- 头部 -->
+<div class="toub_beij toub_beij_zhuy">
+    <div class="fanhui_jt"><a href="geren_zhuy.html"><i class="fanh_jiant"><img src="images/fanh_jiant_bai.png"></i><span>返回</span></a></div>
+    <div class="mingc_tb">发起垫付</div>
+    <div class="sy_zaix"><a href="javascript:;">&nbsp; </a></div>
+</div> 
+<script type="text/javascript">
+    //滑动头部透明（针对首页头部用）
+    window.onscroll=function(){
+
+    var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+    if(autoheight>20){
+        $(".toub_beij").css("position" ,"fixed")
+        }else{
+            $(".toub_beij").css("position" ,"relative")
+        }
+    }
+</script> 
+<!-- 内容 -->  
+<div class="hui_k hui_text">
+    <p>最低垫付100.00元</p>
+</div> 
+<div class="yinghka_k">
+    <ul>
+        <li>
+            <p>垫付金额</p>
+            <input type="text" name="" placeholder="输入金额" value="">
+        </li> 
+    </ul>
+</div>
+<div style="height: 1rem;"></div>
+
+<div class="" id="xuanz">
+    <div class="faqi_df">
+        <div class="dagouqr_s">
+            <div class="dagou" onclick="gouxuan()"></div>
+            <span onclick="gouxuan()">我已经阅读了解垫付网的</span><a href="#">《安全规则与潜在危险》</a>
+        </div>
+        <input class="dengl_anniu" value="登 录" type="button" onclick="top.location.href=' geren_zhuy.html' " />
+    </div>
+</div>
+</body>
+</html>
+ 
+<script type="text/javascript"> 
+function gouxuan()
+{
+    var XuanZ=document.getElementById('xuanz');
+    if (XuanZ.className=='') {
+        XuanZ.className='zhuzhong_tx';
+    }
+    else {
+        XuanZ.className='';
+    }
+    
+} 
+</script>

@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta name="format-detection" content="telephone=no" />
+<meta charset="utf-8">
+<meta content="贵州垫付网垫科技有限公司" http-equiv="keywords">
+<meta name="description" content="贵州垫付网垫科技有限公司">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>贵州垫付网垫科技有限公司</title>
+<link rel="stylesheet" href="/Front/css/index.css" type="text/css">
+<link rel="stylesheet" href="/Front/css/zy.css" type="text/css">  
+<link rel="stylesheet" href="/Front/css/swiper.min.css" type="text/css">
+<script type="text/javascript" src="/Front/js/swiper.min.js"></script>
+<script type="text/javascript" src="/Front/js/jquery-1.4.4.min.js"></script>
+</head>
+<body style="height: 100%; "> 
+<!-- 头部 -->
+<div class="toub_beij toub_beij_zhuy">
+    <div class="fanhui_jt"><a href="geren_zhuy.html"><i class="fanh_jiant"><img src="images/fanh_jiant_bai.png"></i><span>返回</span></a></div>
+    <div class="mingc_tb">找人垫付</div>
+    <div class="sy_zaix"><a href="javascript:;">&nbsp; </a></div>
+</div> 
+<script type="text/javascript">
+    //滑动头部透明（针对首页头部用）
+    window.onscroll=function(){
+
+    var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+    if(autoheight>20){
+        $(".toub_beij").css("position" ,"fixed")
+        }else{
+            $(".toub_beij").css("position" ,"relative")
+        }
+    }
+</script> 
+<!-- 内容 -->  
+<div class="hui_k"></div>
+<div class="nei_r_btk">
+    <ul> 
+        <li>
+            <a href="javascript:;">
+                <h1>用途</h1> 
+                <div class="xiugai">
+                    <select class="faq_df">
+                        <option>信用卡</option>
+                        <option>分红</option>  
+                    </select>
+                    <i></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <h1>垫付金额</h1>
+                <input type="text" class="qian" name="" placeholder="最低垫付100.00元">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <h1>收款卡</h1> 
+                <div class="xiugai">
+                    <h2>522**********2555</h2> 
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <h1>选择期限</h1> 
+                <div class="xiugai">
+                    <select class="faq_df">
+                        <option>三期（无息）</option>
+                        <option>六期</option> 
+                        <option>十二期</option>  
+                    </select>
+                    <i></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <h1>服务费</h1>
+                <span style="font-size: 0.18rem; margin-top: 0.32rem;">随机服务费在0.32%-0.68%之间</span>
+                <div class="xiugai">
+                    <select class="faq_df">
+                        <option>随机生成</option>
+                        <option>0.5%</option>  
+                    </select>
+                    <i></i>
+                </div>
+            </a>
+        </li> 
+    </ul>
+</div> 
+<div class="shang_czd">
+    <h1>上传账单</h1>
+    <div class="shagnd_nr">
+        <h2><img src="images/gongs_jianj.jpg"></h2>
+        <button>上传账单图片</button>
+    </div>
+</div>
+<div class="" id="xuanz">
+    <div class="faqi_df">
+        <div class="dagouqr_s">
+            <div class="dagou" onclick="gouxuan()"></div>
+            <span onclick="gouxuan()">我已经阅读了解垫付网的</span><a href="#">《安全规则与潜在危险》</a>
+        </div>
+        <input class="dengl_anniu" value="确 定" type="button" />
+    </div>
+</div>
+<div style="height: 3rem;"></div>
+</body>
+</html>
+ 
+<script type="text/javascript"> 
+function gouxuan()
+{
+    var XuanZ=document.getElementById('xuanz');
+    if (XuanZ.className=='') {
+        XuanZ.className='zhuzhong_tx';
+    }
+    else {
+        XuanZ.className='';
+    }
+    
+} 
+</script>
