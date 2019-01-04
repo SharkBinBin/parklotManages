@@ -222,13 +222,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			});*/
 
             data = [{"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":3,"resourceName":"用户","resourceOrder":0,"resourceType":""},
-            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":2,"resourceName":"项目经理","resourceOrder":0,"resourceType":""},
+            {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":2,"resourceName":"系统管理","resourceOrder":0,"resourceType":""},
             {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":16,"resourceName":"发放专员","resourceOrder":0,"resourceType":""},
 			{"accessPath":"/Loan/loan/aaa.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":17,"resourceName":"发放贷款","resourceOrder":0,"resourceType":""},
             {"accessPath":"/Loan/huan/HuanKuan.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":18,"resourceName":"回收贷款","resourceOrder":0,"resourceType":""},
             {"accessPath":"addLoad.jsp","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"申请贷款","resourceOrder":0,"resourceType":""},
             {"accessPath":"/Loan/userasd/toAdd.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"还款","resourceOrder":0,"resourceType":""},
-            {"accessPath":"boss/BossLoan","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"贷款资料","resourceOrder":0,"resourceType":""},
+            {"accessPath":"organization/login","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"贷款资料","resourceOrder":0,"resourceType":""},
             {"accessPath":"boss/InstructionsLoad","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":6,"resourceName":"审批贷款","resourceOrder":0,"resourceType":""},
             {"accessPath":"/Loan/user/toRefund.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":32,"resourceName":"还款记录","resourceOrder":0,"resourceType":""},
             {"accessPath":"${pageContext.request.contextPath}/WED-INF/jsp/house_edit.jsp","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":39,"resourceName":"个人信息","resourceOrder":0,"resourceType":""},
