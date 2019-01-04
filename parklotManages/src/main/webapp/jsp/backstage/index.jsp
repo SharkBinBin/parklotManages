@@ -187,7 +187,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				// 异步加载"其他"下的菜单
 				loadMenu('QITAMOKUAI', 'dleft_tab1');
 			} 
-		}
+		} 
 		
 		
 		$(document).ready(function(){
