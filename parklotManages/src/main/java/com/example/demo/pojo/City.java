@@ -13,11 +13,19 @@ public class City {
         this.cityid = cityid;
     }
 
-    public String getCityname() {
+	public String getCityname() {
+		return cityname;
+	}
+
+	public void setCityname(String cityname) {
+		this.cityname = cityname;
+	}
+
+ /*   public String getCityname() {
         return cityname;
     }
 
     public void setCityname(String cityname) {
         this.cityname = cityname == null ? null : cityname.trim();
-    }
+    }*/
 }

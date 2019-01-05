@@ -8,6 +8,4 @@ import com.example.demo.service.ParkingLotsSrvice;
 @Controller
 @RequestMapping("/ParkingLots")
 public class ParkingLotsController {
-	@Autowired
-	private ParkingLotsSrvice parkingLotsSrvice;
 }
