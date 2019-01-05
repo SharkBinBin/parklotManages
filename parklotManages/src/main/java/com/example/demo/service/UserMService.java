@@ -9,4 +9,5 @@ public interface UserMService {
 	
 	Boolean Login(String Mname,String Mpassword);
 	Boolean register(UserM userM);
+	List<UserM> Query(int Mid);
 }

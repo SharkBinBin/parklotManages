@@ -15,4 +15,7 @@ public interface UserMMapper {
 		
 		@Insert("insert user_m values (0, #{userm.mname},#{userm.mnumber},#{userm.mpassword},#{userm.mphone},#{userm.msex},#{userm.midcard},#{userm.mbankid},#{userm.maddress},#{userm.lpnumber},'0',#{userm.memail},CURDATE() )")
 		int register(@Param("userm")UserM userm);
+		/*where Wid = #{Mid}*/
+		@Select("select * from User_M ")
+		List<UserM> Query(@Param("Mid")int Mid);
 }

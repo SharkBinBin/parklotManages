@@ -16,7 +16,20 @@ spring:
     view:
       prefix: /jsp/
       suffix: .jsp
+  mail:
+    default-encoding: utf-8
+    host: smtp.qq.com
+    username: 807051146@qq.com
+    password: iooewjcfgoisbaic
+    protocol: smtp
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
   
 mybatis:
   mapper-locations:
   - classpath:mapper/**.xml
+  
+ 

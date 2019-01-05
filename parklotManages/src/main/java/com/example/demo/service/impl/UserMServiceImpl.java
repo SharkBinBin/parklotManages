@@ -34,5 +34,12 @@ public class UserMServiceImpl implements UserMService{
 		}
 		return false;
 	}
+
+
+
+	@Override
+	public List<UserM> Query(int Mid) {
+		return usermmapper.Query(Mid);
+	}
 	
 }

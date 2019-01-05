@@ -1,5 +1,7 @@
 package com.example.demo.pojo;
 
+
+
 public class Role {
     private Integer rlid;
 
