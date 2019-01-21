@@ -7,15 +7,19 @@ public class Transaction {
 
     private Integer gid;
 
-    private Date ttime;
-
     private String ttype;
 
     private Double tmoney;
 
     private String remark;
-
-    public Integer getTid() {
+    
+    private int mid;
+    
+    private String sdate;
+    
+    private String edate;
+    
+	public Integer getTid() {
         return tid;
     }
 
@@ -29,14 +33,6 @@ public class Transaction {
 
     public void setGid(Integer gid) {
         this.gid = gid;
-    }
-
-    public Date getTtime() {
-        return ttime;
-    }
-
-    public void setTtime(Date ttime) {
-        this.ttime = ttime;
     }
 
     public String getTtype() {
@@ -58,7 +54,31 @@ public class Transaction {
     public String getRemark() {
         return remark;
     }
+    
+    public String getSdate() {
+		return sdate;
+	}
 
+	public void setSdate(String sdate) {
+		this.sdate = sdate;
+	}
+
+	public String getEdate() {
+		return edate;
+	}
+
+	public void setEdate(String edate) {
+		this.edate = edate;
+	}
+
+	public int getMid() {
+		return mid;
+	}
+
+	public void setMid(int mid) {
+		this.mid = mid;
+	}
+	
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
     }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.demo.pojo.Externalusers;
 import com.example.demo.pojo.UserM;
 import com.example.demo.service.UserMService;
 import com.github.pagehelper.PageHelper;
@@ -60,6 +61,16 @@ public class UserMcontroller {
 	        //得到分页中的person条目对象
 	        List<UserM> pageList = personPageInfo.getList();
 	        result.put("userlist", pageList);
-		return "Front/userinfo";
+		return "/Front/userinfo";
 	}
+	
+	@RequestMapping("Externalusers")
+	public String selectExternal(Model model,String membership,String fullname,
+			String certificates,String phonenumber,String platenumber) {
+		List<Externalusers> naluserslist = usermservice.Queryexternal(membership, fullname, certificates, phonenumber, platenumber);
+		
+		model.addAttribute("naluserslist","naluserslist");
+		return "/backstage/Externalusers";
+	}
+	
 }

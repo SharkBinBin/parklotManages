@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.mapper.UserMMapper;
+import com.example.demo.pojo.Externalusers;
 import com.example.demo.pojo.UserM;
 import com.example.demo.service.UserMService;
 @Service
@@ -40,6 +41,15 @@ public class UserMServiceImpl implements UserMService{
 	@Override
 	public List<UserM> Query(int Mid) {
 		return usermmapper.Query(Mid);
+	}
+
+
+
+	@Override
+	public List<Externalusers> Queryexternal(String membership, String fullname, String certificates,
+			String phonenumber, String platenumber) {
+		// TODO Auto-generated method stub
+		return usermmapper.Queryexternal(membership, fullname, certificates, phonenumber, platenumber);
 	}
 	
 }

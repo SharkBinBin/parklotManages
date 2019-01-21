@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import com.example.demo.pojo.Externalusers;
 import com.example.demo.pojo.UserM;
 
 public interface UserMMapper {
@@ -18,4 +19,11 @@ public interface UserMMapper {
 		/*where Wid = #{Mid}*/
 		@Select("select * from User_M ")
 		List<UserM> Query(@Param("Mid")int Mid);
+		
+		@Select("select * from User_M where MNumber=#{membership} and MName=#{fullname} and MIdcard=#{certificates} and MPhone=#{phonenumber} and LpNumber=#{platenumber}")
+		List<Externalusers> Queryexternal(@Param("membership")String membership,
+				@Param("fullname")String fullname,
+				@Param("certificates")String certificates,
+				@Param("phonenumber")String phonenumber,
+				@Param("platenumber")String platenumber);
 }

@@ -226,12 +226,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             {"accessPath":"","checked":false,"delFlag":0,"parentID":1,"resourceCode":"","resourceDesc":"","resourceGrade":2,"resourceID":16,"resourceName":"发放专员","resourceOrder":0,"resourceType":""},
 			{"accessPath":"/Loan/loan/aaa.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":17,"resourceName":"发放贷款","resourceOrder":0,"resourceType":""},
             {"accessPath":"/Loan/huan/HuanKuan.html","checked":false,"delFlag":0,"parentID":16,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":18,"resourceName":"回收贷款","resourceOrder":0,"resourceType":""},
-            {"accessPath":"/test","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"停车场统计","resourceOrder":0,"resourceType":""},
-            {"accessPath":"/Loan/userasd/toAdd.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"还款","resourceOrder":0,"resourceType":""},
-            {"accessPath":"organization/login","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"贷款资料","resourceOrder":0,"resourceType":""},
+            {"accessPath":"/test","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":7,"resourceName":"停车场车位统计","resourceOrder":0,"resourceType":""},
+            {"accessPath":"/statistics","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":8,"resourceName":"停车场收费统计","resourceOrder":0,"resourceType":""},
+            {"accessPath":"organization/login","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":5,"resourceName":"","resourceOrder":0,"resourceType":""},
             {"accessPath":"boss/InstructionsLoad","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":6,"resourceName":"审批贷款","resourceOrder":0,"resourceType":""},
-            {"accessPath":"/Loan/user/toRefund.html","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":32,"resourceName":"还款记录","resourceOrder":0,"resourceType":""},
-            {"accessPath":"${pageContext.request.contextPath}/WED-INF/jsp/house_edit.jsp","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":39,"resourceName":"个人信息","resourceOrder":0,"resourceType":""},
+            {"accessPath":"/Record","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":32,"resourceName":"停车记录查询","resourceOrder":0,"resourceType":""},
+            {"accessPath":"/Reconciliation","checked":false,"delFlag":0,"parentID":3,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":39,"resourceName":"对账统计","resourceOrder":0,"resourceType":""},
             {"accessPath":"house_list.jsp","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":9,"resourceName":"用户信息","resourceOrder":0,"resourceType":""},
 		    {"accessPath":"instructionsTRefund.jsp","checked":false,"delFlag":0,"parentID":2,"resourceCode":"","resourceDesc":"","resourceGrade":3,"resourceID":10,"resourceName":"审批延期还款","resourceOrder":0,"resourceType":""}];
             // 如果返回数据不为空，加载"业务模块"目录
@@ -370,7 +370,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</script>
     <!-- side menu start -->
     <div id="top_nav">
-	 	<span id="here_area">小额贷款</span>
+	 	<span id="here_area">停车场后台管理系统</span>
 	</div>
     <div id="main">
       	<iframe name="right" id="rightMain" src="introduce.html" frameborder="no" scrolling="auto" width="100%" height="100%" allowtransparency="true"/>
