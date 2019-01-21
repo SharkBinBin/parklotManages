@@ -72,7 +72,7 @@ public class CityController {
 		model.addAttribute("list", garagelist);
 		model.addAttribute("currPageNo", currPageNo);
 		model.addAttribute("list2", list2);
-		model.addAttribute("citylist", citylist);
+		model.addAttribute("citylist", citylist); 
 		return "backstage/test";
 		
 	}
